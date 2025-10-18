@@ -1,73 +1,41 @@
-# Welcome to your Lovable project
+Bresenham Line Drawing Game
+A web-based educational tool and game to teach the Bresenham Line Drawing Algorithm using React, Tailwind CSS, p5.js, and Python (via Pyodide).
+Features
 
-## Project info
+Tutorial: Animated introduction to the Bresenham algorithm with audio narration.
+Game: Interactive experience where players select two points on a grid, calculate slope and algorithm constants, and visualize the line drawing process.
+Frontend: Built with React, Tailwind CSS for styling, and p5.js for canvas animations.
+Backend Logic: Bresenham algorithm implemented in Python, executed in the browser using Pyodide.
 
-**URL**: https://lovable.dev/projects/a997b6b3-5699-447d-8f5c-b65a09d58b6d
+Setup
 
-## How can I edit this code?
+Clone the repository:git clone <repository-url>
+cd bresenham-game
 
-There are several ways of editing your application.
 
-**Use Lovable**
+Install dependencies:npm install
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a997b6b3-5699-447d-8f5c-b65a09d58b6d) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+Start the development server:npm start
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Dependencies
 
-Follow these steps:
+React: Frontend framework
+Tailwind CSS: Styling
+p5.js: Canvas animations
+Pyodide: Python execution in the browser
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Usage
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Navigate to the app in your browser
+Switch between Tutorial and Game modes using the buttons.
+In Game mode:
+Click two points on the grid to define a line segment.
+Enter coordinates and calculate constants ((\Delta x), (\Delta y), (P_0)).
+View the iteration table and animated line drawing.
 
-# Step 3: Install the necessary dependencies.
-npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/a997b6b3-5699-447d-8f5c-b65a09d58b6d) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Audio narration file (path-to-narration.mp3) must be hosted and linked in Tutorial.js.
+Pyodide runs Python in the browser, so avoid file I/O or network calls in Python code.
